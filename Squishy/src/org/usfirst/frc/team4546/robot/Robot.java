@@ -19,7 +19,8 @@ import org.usfirst.frc.team4546.robot.commands.*;
  */
 public class Robot extends IterativeRobot {
 
-	public OI oi;
+	public static Drivetrain drivetrain;
+	public static OI oi;
     //Command autonomousCommand;
 
     /**
@@ -27,7 +28,7 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
-
+    	drivetrain = new Drivetrain();
     	oi = new OI();
         // instantiate the command used for the autonomous period
         //autonomousCommand = new ExampleCommand();
