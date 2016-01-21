@@ -7,11 +7,11 @@ import edu.wpi.first.wpilibj.command.Command;
 
 public class Drive extends Command	{
 
-	Joystick driveStick;
+	//Joystick driveStick;
 	
-	public Drive(Joystick stick)	{
+	public Drive()	{
 		
-		driveStick = stick;
+		//driveStick = stick;
 		requires(Robot.drivetrain);
 	}
 	
@@ -21,7 +21,7 @@ public class Drive extends Command	{
 
 	protected void execute() {
 		
-		Robot.drivetrain.drive(driveStick.getY(), driveStick.getZ(), 1);
+		Robot.drivetrain.drive(Robot.oi.driveStick.getY(), Robot.oi.driveStick.getZ(), 1);
 	}
 
 	protected boolean isFinished() {
