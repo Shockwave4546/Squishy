@@ -36,7 +36,7 @@ public class RobotMap {
         drivetrainChassis.setSensitivity(0.5);
         drivetrainChassis.setMaxOutput(1.0);
         
-        drivetrainChassis.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
+        drivetrainChassis.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
 	}
 	
 }

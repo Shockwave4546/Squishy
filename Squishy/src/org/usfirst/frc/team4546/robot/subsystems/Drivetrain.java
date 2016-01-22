@@ -17,7 +17,7 @@ public class Drivetrain extends Subsystem	{
 	
 	protected void initDefaultCommand() {
 
-		//setDefaultCommand(new Drive(Robot.oi.getDriveStick()));
+		setDefaultCommand(new Drive());
 	}
 	
 	public void drive(double magnitude, double rotate, double speed)	{

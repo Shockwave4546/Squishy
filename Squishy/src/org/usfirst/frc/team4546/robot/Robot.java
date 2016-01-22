@@ -28,6 +28,7 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
+    	RobotMap.init();
     	drivetrain = new Drivetrain();
     	oi = new OI();
         // instantiate the command used for the autonomous period
