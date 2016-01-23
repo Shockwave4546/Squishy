@@ -18,4 +18,14 @@ public class Cannon extends Subsystem {
 		
 		return sonicSensor.getVoltage();
 	}
+	
+	public double getRange()	{
+		
+		return sonicSensor.getVoltage()*.0049;
+	}
+	
+	public double getRequiredAngle(double speed, double distance)	{
+		
+		
+	}
 }
