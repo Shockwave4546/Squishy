@@ -1,5 +1,6 @@
 package org.usfirst.frc.team4546.robot;
 
+import edu.wpi.first.wpilibj.AnalogInput;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Talon;
 
@@ -23,6 +24,7 @@ public class RobotMap {
 	public static Talon drivetrainLeft;
 	public static Talon drivetrainRight;
 	public static RobotDrive drivetrainChassis;
+	public static AnalogInput cannonSonicSensor;
 	
 	public static void init()	{
 		
@@ -37,6 +39,8 @@ public class RobotMap {
         drivetrainChassis.setMaxOutput(1.0);
         
         drivetrainChassis.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
+        
+        cannonSonicSensor = new AnalogInput(0);
 	}
 	
 }
