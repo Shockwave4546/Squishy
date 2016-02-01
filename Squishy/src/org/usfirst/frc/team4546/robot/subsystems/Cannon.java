@@ -26,6 +26,6 @@ public class Cannon extends Subsystem {
 	
 	public double getRequiredAngle(double speed, double distance)	{
 		
-		
+		return 0;
 	}
 }
